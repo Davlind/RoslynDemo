@@ -25,3 +25,6 @@ C:\symlink\Documents\SD\RoslynDemo\SyntaxTree\bin\Debug\System.Collections.Immut
 C:\symlink\Documents\SD\RoslynDemo\SyntaxTree\bin\Debug\System.Reflection.Metadata.xml
 C:\symlink\Documents\SD\RoslynDemo\SyntaxTree\obj\Debug\SyntaxTree.exe
 C:\symlink\Documents\SD\RoslynDemo\SyntaxTree\obj\Debug\SyntaxTree.pdb
+\\psf\home\Documents\SD\RoslynDemo\SyntaxTree\bin\Debug\SyntaxTree.exe.config
+\\psf\home\Documents\SD\RoslynDemo\SyntaxTree\obj\Debug\SyntaxTree.exe
+\\psf\home\Documents\SD\RoslynDemo\SyntaxTree\obj\Debug\SyntaxTree.pdb
