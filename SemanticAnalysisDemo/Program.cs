@@ -34,20 +34,6 @@ namespace SemanticAnalysisDemo
 
             var root = (CompilationUnitSyntax)tree.GetRoot();
 
-            var compilation = CSharpCompilation.Create("sqrt.dll")
-             .AddReferences(new MetadataFileReference(typeof(object).Assembly.Location))
-             .AddSyntaxTrees(tree);
-
-            var model = compilation.GetSemanticModel(tree);
-
-            foreach(var variable in root.DescendantNodes().OfType<LocalDeclarationStatementSyntax>())
-            {
-                var typeSymbol = model.GetSymbolInfo(variable.Declaration.Type).Symbol;
-                var variableDeclaration = variable.DescendantNodes().OfType<VariableDeclaratorSyntax>().First();
-
-                Console.WriteLine("{0,-10}{1}", typeSymbol, variableDeclaration);
-            }
-
             Console.ReadLine();
         }
     }
