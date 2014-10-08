@@ -1,3 +1,0 @@
-\\psf\home\documents\SD\RoslynDemo\SyntaxTree\bin\Debug\SyntaxTree.exe.config
-C:\symlink\Documents\SD\RoslynDemo\SyntaxTree\bin\Debug\SyntaxTree.exe.config
-C:\symlink\Documents\SD\RoslynDemo\SyntaxTree\obj\Debug\SyntaxTree.csprojResolveAssemblyReference.cache

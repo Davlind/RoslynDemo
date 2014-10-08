@@ -1,3 +1,0 @@
-C:\symlink\Documents\SD\RoslynDemo\SyntaxWalker\bin\Debug\SyntaxWalker.exe.config
-C:\symlink\Documents\SD\RoslynDemo\SyntaxWalker\obj\Debug\SyntaxWalker.exe
-C:\symlink\Documents\SD\RoslynDemo\SyntaxWalker\obj\Debug\SyntaxWalker.pdb
