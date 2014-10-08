@@ -36,7 +36,7 @@ namespace SyntaxTreeDemo
 
             var implicitVariables =
                 from variableDeclaration in root.DescendantNodes()
-                                                .OfType<VariableDeclarationSyntax>()
+                                                .OfType<LocalDeclarationStatementSyntax>()
                 from implicitVariable in variableDeclaration.DescendantNodes()
                                                             .OfType<IdentifierNameSyntax>()
                 where implicitVariable.Identifier.ValueText == "var"

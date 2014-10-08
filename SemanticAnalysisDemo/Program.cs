@@ -43,9 +43,9 @@ namespace SemanticAnalysisDemo
             foreach(var variable in root.DescendantNodes().OfType<LocalDeclarationStatementSyntax>())
             {
                 var typeSymbol = model.GetSymbolInfo(variable.Declaration.Type).Symbol;
-                var variableName = variable.DescendantNodes().OfType<VariableDeclaratorSyntax>().First();
+                var variableDeclaration = variable.DescendantNodes().OfType<VariableDeclaratorSyntax>().First();
 
-                Console.WriteLine("{0,-10}{1}", typeSymbol, variableName);
+                Console.WriteLine("{0,-10}{1}", typeSymbol, variableDeclaration);
             }
 
             Console.ReadLine();
