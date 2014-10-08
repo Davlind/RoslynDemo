@@ -10,27 +10,7 @@ namespace SyntaxTreeDemo
     {
         static void Main()
         {
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(@" 
-                public static float FindSquareRoot_BS(int number)
-                {
-                    var precision = 0.0001f;
-                    var min = 0;
-                    var max = number;
-                    var result = 0;
-                    while (max-min > precision)
-                    {
-                        result = (min + max) / 2;
-                        if ((result*result) >= number)
-                        {
-                           max = result;
-                        }
-                        else
-                        {
-                           min = result;
-                        }
-                   }
-                   return result;
-                }");
+            SyntaxTree tree = CSharpSyntaxTree.ParseText(@"kod");
 
             var root = (CompilationUnitSyntax)tree.GetRoot();
 
