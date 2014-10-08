@@ -20,7 +20,7 @@ namespace SyntaxWalker
 
             base.VisitMethodDeclaration(node);
 
-            Console.WriteLine("\t{0}\t\tCtyclomatic Complexity: {1}", node.Identifier.ValueText, complexity);
+            Console.WriteLine("\t{0}\t\tCyclomatic Complexity: {1}", node.Identifier.ValueText, complexity);
         }
 
         public override void VisitIfStatement(IfStatementSyntax node)
