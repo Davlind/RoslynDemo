@@ -10,17 +10,7 @@ namespace SyntaxTreeDemo
     {
         static void Main()
         {
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(@"kod");
-
-            var root = (CompilationUnitSyntax)tree.GetRoot();
-
-            var implicitVariables =
-                from variableDeclaration in root.DescendantNodes()
-                                                .OfType<LocalDeclarationStatementSyntax>()
-                from implicitVariable in variableDeclaration.DescendantNodes()
-                                                            .OfType<IdentifierNameSyntax>()
-                where implicitVariable.Identifier.ValueText == "var"
-                select implicitVariable;
+            var implicitVariables;
 
             Console.WriteLine("Found {0} implicit variables", implicitVariables.Count());
             Console.ReadLine();
